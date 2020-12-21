@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Abstractions\Repositories\IDocumentoRepository.cs" />
+    <Compile Include="Abstractions\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Abstractions\Services\IDocumentoService.cs" />
+    <Compile Include="Abstractions\Services\IServiceBase.cs" />
     <Compile Include="Entities\Documento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
