@@ -34,6 +34,8 @@
     <Compile Include="Abstractions\IAppServiceBase.cs" />
     <Compile Include="Abstractions\IDocumentoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AppServiceBase.cs" />
+    <Compile Include="Services\DocumentoAppService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocMvc.Domain\DocMvc.Domain.csproj">
