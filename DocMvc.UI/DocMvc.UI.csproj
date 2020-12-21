@@ -123,6 +123,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DocumentosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -188,6 +189,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DocMvc.Application\DocMvc.Application.csproj">
+      <Project>{59ba45a0-74fd-43af-bf53-2ba2016b2392}</Project>
+      <Name>DocMvc.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DocMvc.Domain\DocMvc.Domain.csproj">
       <Project>{097fc7b2-bec6-4518-96d4-12675ee439b4}</Project>
       <Name>DocMvc.Domain</Name>
