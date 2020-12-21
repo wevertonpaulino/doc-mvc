@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocMvc.Domain", "DocMvc.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocMvc.Infrastructure.Data", "DocMvc.Infrastructure.Data\DocMvc.Infrastructure.Data.csproj", "{4BF36989-AF38-49AD-9243-A5E5C425F363}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocMvc.Application", "DocMvc.Application\DocMvc.Application.csproj", "{59BA45A0-74FD-43AF-BF53-2BA2016B2392}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4BF36989-AF38-49AD-9243-A5E5C425F363}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BF36989-AF38-49AD-9243-A5E5C425F363}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BF36989-AF38-49AD-9243-A5E5C425F363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BA45A0-74FD-43AF-BF53-2BA2016B2392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BA45A0-74FD-43AF-BF53-2BA2016B2392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BA45A0-74FD-43AF-BF53-2BA2016B2392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BA45A0-74FD-43AF-BF53-2BA2016B2392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{9B4B492F-47E3-4613-B7BD-A4203A8B4353} = {8FE6D3E6-0779-41B0-91CF-18ACE1FAA11A}
 		{097FC7B2-BEC6-4518-96D4-12675EE439B4} = {BCE53CBF-E825-4861-9626-F4DCEAB13E5A}
 		{4BF36989-AF38-49AD-9243-A5E5C425F363} = {BE79A8C3-DDFB-4C61-BE88-613FA50C2C46}
+		{59BA45A0-74FD-43AF-BF53-2BA2016B2392} = {5EA28ABE-70C5-4BE0-A207-93C793BC03B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AEA514AE-F235-4280-8E51-F7AB3CDCEFB8}
