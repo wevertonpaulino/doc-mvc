@@ -31,7 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Abstractions\IAppServiceBase.cs" />
+    <Compile Include="Abstractions\IDocumentoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocMvc.Domain\DocMvc.Domain.csproj">
+      <Project>{097fc7b2-bec6-4518-96d4-12675ee439b4}</Project>
+      <Name>DocMvc.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
