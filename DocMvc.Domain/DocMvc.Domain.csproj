@@ -37,6 +37,8 @@
     <Compile Include="Abstractions\Services\IServiceBase.cs" />
     <Compile Include="Entities\Documento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DocumentoService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
