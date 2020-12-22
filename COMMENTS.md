@@ -12,4 +12,5 @@ Tecnologias:
 Práticas:
 
 - DDD;
+- GitFlow;
 - SOLID.
