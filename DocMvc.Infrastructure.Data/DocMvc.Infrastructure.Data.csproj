@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="Configuration\DocumentoConfiguration.cs" />
     <Compile Include="Context\DocumentoContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DocumentoRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
