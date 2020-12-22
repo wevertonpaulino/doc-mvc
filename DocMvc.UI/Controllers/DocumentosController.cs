@@ -16,6 +16,15 @@ namespace DocMvc.UI.Controllers
         public DocumentosController(IDocumentoAppService documentoAppService)
         {
             _documentoAppService = documentoAppService;
+
+            #region ViewBag
+            var listItems = new List<string>()
+            {
+                "0", "A", "B", "C", "D", "E", "F", "G"
+            };
+
+            ViewBag.ListItems = listItems;
+            #endregion
         }
 
         // GET: Documentos
