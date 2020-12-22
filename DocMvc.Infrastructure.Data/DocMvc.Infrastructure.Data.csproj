@@ -36,6 +36,10 @@
   <ItemGroup>
     <Compile Include="Configuration\DocumentoConfiguration.cs" />
     <Compile Include="Context\DocumentoContext.cs" />
+    <Compile Include="Migrations\202012220008162_InitialCreate.cs" />
+    <Compile Include="Migrations\202012220008162_InitialCreate.designer.cs">
+      <DependentUpon>202012220008162_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DocumentoRepository.cs" />
@@ -113,6 +117,11 @@
       <Project>{097fc7b2-bec6-4518-96d4-12675ee439b4}</Project>
       <Name>DocMvc.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202012220008162_InitialCreate.resx">
+      <DependentUpon>202012220008162_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
