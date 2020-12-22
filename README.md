@@ -2,4 +2,4 @@
 
 ## Sistema de cadastro de documentos.
 
-![image](docmvc.png)
+![image](image.png)
