@@ -1,4 +1,5 @@
 ﻿using DocMvc.Domain.Entities;
+using DocMvc.Infrastructure.Data.Configuration;
 using MySql.Data.EntityFramework;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -23,6 +24,8 @@ namespace DocMvc.Infrastructure.Data.Context
 
             modelBuilder.Properties<string>().Configure(p => p.HasColumnType("varchar"));
             modelBuilder.Properties<string>().Configure(p => p.HasMaxLength(100));
+
+            modelBuilder.Configurations.Add(new DocumentoConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
