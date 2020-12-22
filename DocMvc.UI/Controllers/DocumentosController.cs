@@ -16,12 +16,27 @@ namespace DocMvc.UI.Controllers
         public DocumentosController(IDocumentoAppService documentoAppService)
         {
             _documentoAppService = documentoAppService;
+
+            #region ViewBag
+            var listItems = new List<string>()
+            {
+                "0", "A", "B", "C", "D", "E", "F", "G"
+            };
+
+            ViewBag.ListItems = listItems;
+            #endregion
         }
 
         // GET: Documentos
-        public ActionResult Index()
+        public ActionResult Index(string titulo)
         {
             var documentos = _documentoAppService.GetAll();
+
+            if (!string.IsNullOrEmpty(titulo))
+            {
+                documentos = _documentoAppService.GetByTitulo(titulo);
+            }
+
             var documentoViewModel = _mapper.Map<IEnumerable<Documento>, IEnumerable<DocumentoViewModel>>(documentos);
 
             return View(documentoViewModel);
@@ -93,11 +108,11 @@ namespace DocMvc.UI.Controllers
         }
 
         // POST: Documentos/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(DocumentoViewModel documentoViewModel)
+        public ActionResult DeleteConfirmed(int id)
         {
-            var documento = _mapper.Map<DocumentoViewModel, Documento>(documentoViewModel);
+            var documento = _documentoAppService.GetByCodigo(id);
             _documentoAppService.Remove(documento);
 
             return RedirectToAction("Index");
