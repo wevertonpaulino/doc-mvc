@@ -93,11 +93,11 @@ namespace DocMvc.UI.Controllers
         }
 
         // POST: Documentos/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(DocumentoViewModel documentoViewModel)
+        public ActionResult DeleteConfirmed(int id)
         {
-            var documento = _mapper.Map<DocumentoViewModel, Documento>(documentoViewModel);
+            var documento = _documentoAppService.GetByCodigo(id);
             _documentoAppService.Remove(documento);
 
             return RedirectToAction("Index");
