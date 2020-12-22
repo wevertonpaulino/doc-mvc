@@ -28,9 +28,15 @@ namespace DocMvc.UI.Controllers
         }
 
         // GET: Documentos
-        public ActionResult Index()
+        public ActionResult Index(string titulo)
         {
             var documentos = _documentoAppService.GetAll();
+
+            if (!string.IsNullOrEmpty(titulo))
+            {
+                documentos = _documentoAppService.GetByTitulo(titulo);
+            }
+
             var documentoViewModel = _mapper.Map<IEnumerable<Documento>, IEnumerable<DocumentoViewModel>>(documentos);
 
             return View(documentoViewModel);
